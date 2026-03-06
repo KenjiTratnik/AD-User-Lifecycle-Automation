@@ -1,0 +1,6 @@
+FirstName, LastName, Username, Graduated
+Ariana, Pruitt, ad.AriPruitt, No
+Alanna, Waller, ad.AlaWaller, No
+Benjamin, Mcleod, ad.BenMcleod, Yes
+# Do Not Use Commas Within Fields
+# Format: ad.First3LastName
