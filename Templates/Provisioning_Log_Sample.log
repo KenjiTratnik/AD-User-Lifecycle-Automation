@@ -1,0 +1,27 @@
+**********************
+Windows PowerShell transcript start
+Start time: 20260306115333
+Username: AD\Administrator
+RunAs User: AD\Administrator
+Configuration Name: 
+Machine: DELL-R440 (Microsoft Windows NT 10.0.17763.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 7944
+**********************
+Transcript started, output file is C:\Provisioning\Logs\Provisioning_20260306_1153.log
+
+--- Starting Student Provisioning Process ---
+Created AD User: Ariana Pruitt
+Waiting for AD replication...
+ Success!
+Successfully provisioned: Ariana Pruitt
+
+Error on Jacob Daniel : The specified account already exists
+
+De-provisioned Graduated Student: Thalia Santana
+
+Automation Task Complete.
+**********************
+Windows PowerShell transcript end
+End time: 20260306115334
+**********************
