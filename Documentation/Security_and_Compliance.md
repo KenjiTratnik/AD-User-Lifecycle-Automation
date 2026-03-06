@@ -34,3 +34,12 @@ To ensure system stability, the automation logic is **Idempotent**.
 ## 5. Auditability
 * **Secure Logging:** Every provisioning action is recorded in a local administrative log (`NewStudentPasswords.csv`).
 * **Transcripting:** In a production environment, this suite is designed to run within a `Start-Transcript` block to provide a timestamped audit trail of every modification made to the Domain Controllers.
+
+## 6. Access-Based Enumeration (ABE)
+To protect student privacy and reduce the attack surface for directory harvesting, **Access-Based Enumeration** was enabled on the `StudentHomes` share.
+
+* **Functionality:** ABE filters the list of available files and folders based on the user's individual permissions.
+* **Security Impact:** When a student navigates to `\\files.ad.lab\StudentHomes`, they *only* see their own folder. All other student directories are hidden from view at the protocol level.
+* **Compliance:** This aligns with FERPA-style privacy standards by ensuring that a student’s presence in a specific program or directory is not visible to unauthorized peers.
+
+
